@@ -3,21 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       h1{
+        background-color: aquamarine;
+        text-align: center;
+        padding: 20px;
+        size-adjust: auto;
+       }
+       #inputs{
+              display: flex;
+              flex-direction: column;
+              padding: 25px;
+       }
+       #inputs label{
+           float: left;
+       }
+        #content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+            padding: 20px;
+           
+            
+        }
+   #myDiv{
+    display: flex;
+justify-content: center;
+align-items: center;
+background-color:none;
+padding: 20px;
+
+   }
+    #content{
+     text-align: center;
+    }
+    input, button, a{
+        display: block;
+        padding: 10px;    }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>Welcome, welcome my friend</h1>
-        <form action="form_processing_script.php" method="post"></form>
+     
+    <h1>Welcome, welcome my friend</h1>
+    
+    <div id="myDiv">
+        <form id="mainForm"action="form_processing_script.php" method="post"></form>
+           
+        <div id="content">
+         <div id="inputs">
             <label for="username">Username:</label>
             <input type="email" id="username" name="username" required>
            
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input  type="password" id="password" name="password" required>
+        </div>
             <button type="submit" id="logIn">Log in</button>
-            <a href=""></a>
-
+            <a   href="#">Forgotten your password?</a>
+            <button type="button" id="signUp">Sign up</button>
+        </div>
     </div>
-    
+
 </body>
 </html>
